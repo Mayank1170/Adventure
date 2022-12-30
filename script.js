@@ -4,17 +4,16 @@ document.addEventListener('scroll',
 function (e){
 var offset = window.pageYOffset;
 scroll = offset;
-layer1.style.width = (100 + scroll/8)  + '%';
-});
+layer1.style.width = (50 + scroll/4)  + '%';
+layer1.style.left = -scroll/2.5  + '%';
 
+});
 var layer2= document.getElementById('layer2')
 scroll= window.pageYOffset;
 document.addEventListener('scroll', 
 function (e){
 var offset = window.pageYOffset;
 scroll = offset;
-layer2.style.width = (100 + scroll/5)  + '%';
-layer2.style.left = scroll/50  + '%';
-
-
+layer2.style.width = (50 + scroll/4)  + '%';
+layer2.style.right = -scroll/2.5  + '%';
 });
